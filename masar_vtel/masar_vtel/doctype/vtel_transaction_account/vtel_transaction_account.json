@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "creation": "2026-06-25 12:50:00.827409",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account",
+  "account_currency",
+  "party_type",
+  "party",
+  "col_break_amounts",
+  "debit_in_account_currency",
+  "credit_in_account_currency",
+  "debit",
+  "credit",
+  "section_dimensions",
+  "cost_center",
+  "project",
+  "col_break_ref",
+  "reference_type",
+  "reference_name",
+  "user_remark"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_currency",
+   "fieldtype": "Link",
+   "label": "Account Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "col_break_amounts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "debit_in_account_currency",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Debit (Account Currency)",
+   "options": "account_currency"
+  },
+  {
+   "columns": 2,
+   "fieldname": "credit_in_account_currency",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Credit (Account Currency)",
+   "options": "account_currency"
+  },
+  {
+   "fieldname": "debit",
+   "fieldtype": "Currency",
+   "label": "Debit (Company Currency)"
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Currency",
+   "label": "Credit (Company Currency)"
+  },
+  {
+   "fieldname": "section_dimensions",
+   "fieldtype": "Section Break",
+   "label": "Dimensions"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "col_break_ref",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Data",
+   "label": "Reference Type"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Data",
+   "label": "Reference Name"
+  },
+  {
+   "fieldname": "user_remark",
+   "fieldtype": "Small Text",
+   "label": "User Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-25 13:12:08.307168",
+ "modified_by": "Administrator",
+ "module": "Masar Vtel",
+ "name": "VTEL Transaction Account",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
